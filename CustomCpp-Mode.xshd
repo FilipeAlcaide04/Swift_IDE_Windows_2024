@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SyntaxDefinition name="CustomC/C++/C#/Swift" extensions=".c;.cpp;.cs;.swift" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+
+	<Color name="Keyword" foreground="#FF79C6" />
+	<!-- Vibrant Pink -->
+
+	<Color name="Comment" foreground="#8BE9FD" />
+	<!-- Light Cyan -->
+
+	<Color name="String" foreground="#FFD700" />
+	<!-- Gold for better visibility -->
+
+	<Color name="Number" foreground="#FFB86C" />
+	<!-- Warm Orange -->
+
+	<Color name="Type" foreground="#BD93F9" />
+	<!-- Light Purple -->
+
+	<Color name="Operator" foreground="#50FA7B" />
+	<!-- Bright Green -->
+
+	<Color name="Function" foreground="#FF5555" />
+	<!-- Soft Red for function names -->
+
+	<Color name="Identifier" foreground="#F8F8F2" />
+	<!-- White for variable names for contrast -->
+
+	<Color name="Preprocessor" foreground="#FF79C6" />
+	<!-- Same as keyword, but can be changed -->
+
+	<Color name="Class" foreground="#66D9EF" />
+	<!-- Cyan for class names -->
+
+	<Color name="Interface" foreground="#A6E22E" />
+	<!-- Bright Green for interfaces -->
+
+	<!-- Syntax rules -->
+	<RuleSet>
+		<!-- Single-line comments -->
+		<Span color="Comment">
+			<Begin>//</Begin>
+			<End>$</End>
+		</Span>
+
+		<!-- Multi-line comments -->
+		<Span color="Comment" multiline="true">
+			<Begin>/\*</Begin>
+			<End>\*/</End>
+		</Span>
+
+		<!-- Strings -->
+		<Span color="String">
+			<Begin>"</Begin>
+			<End>"</End>
+		</Span>
+		<Span color="String">
+			<Begin>'</Begin>
+			<End>'</End>
+		</Span>
+
+		<!-- Numbers -->
+		<Span color="Number">
+			<Begin>\b\d+(\.\d*)?\b</Begin>
+			<End> </End>
+		</Span>
+
+		<!-- Keywords for C/C++, C#, and Swift -->
+		<Keywords color="Keyword">
+			<!-- C/C++ Keywords -->
+			<Word>template</Word>
+			<Word>namespace</Word>
+			<Word>friend</Word>
+			<Word>public</Word>
+			<Word>private</Word>
+			<Word>protected</Word>
+			<Word>virtual</Word>
+			<Word>override</Word>
+			<Word>final</Word>
+			<Word>const_cast</Word>
+			<Word>dynamic_cast</Word>
+			<Word>static_cast</Word>
+			<Word>reinterpret_cast</Word>
+			<Word>sizeof</Word>
+			<Word>alignas</Word>
+			<Word>alignof</Word>
+			<Word>decltype</Word>
+			<Word>auto</Word>
+			<Word>nullptr</Word>
+			<Word>explicit</Word>
+			<Word>volatile</Word>
+			<Word>operator</Word>
+			<Word>this</Word>
+			<Word>typeid</Word>
+			<Word>asm</Word>
+			<Word>catch</Word>
+			<Word>throw</Word>
+			<Word>noexcept</Word>
+			<Word>export</Word>
+			<Word>const</Word>
+			<Word>break</Word>
+			<Word>case</Word>
+			<Word>continue</Word>
+			<Word>default</Word>
+			<Word>do</Word>
+			<Word>enum</Word>
+			<Word>extern</Word>
+			<Word>goto</Word>
+			<Word>inline</Word>
+			<Word>register</Word>
+			<Word>restrict</Word>
+			<Word>static</Word>
+			<Word>struct</Word>
+			<Word>switch</Word>
+			<Word>typedef</Word>
+			<Word>union</Word>
+			<Word>while</Word>
+			<Word>if</Word>
+			<Word>else</Word>
+			<Word>return</Word>
+			<Word>printf</Word>
+			<Word>scanf</Word>
+			<Word>fprintf</Word>
+			<Word>fscanf</Word>
+			<Word>sprintf</Word>
+			<Word>sscanf</Word>
+			<Word>cin</Word>
+			<Word>cout</Word>
+			<Word>cerr</Word>
+			<Word>clog</Word>
+			<Word>getline</Word>
+			<Word>endl</Word>
+			<Word>sizeof</Word>
+			<Word>typedef</Word>
+			<Word>alignof</Word>
+			<Word>alignas</Word>
+			<Word>noexcept</Word>
+			<Word>nullptr</Word>
+			<Word>decltype</Word>
+			<Word>#include</Word>
+			<!-- C# Keywords -->
+			<Word>async</Word>
+			<Word>await</Word>
+			<Word>dynamic</Word>
+			<Word>var</Word>
+			<Word>default</Word>
+			<Word>lock</Word>
+			<Word>fixed</Word>
+			<Word>is</Word>
+			<Word>as</Word>
+			<Word>where</Word>
+			<Word>yield</Word>
+			<Word>delegate</Word>
+			<Word>partial</Word>
+			<Word>event</Word>
+			<Word>object</Word>
+			<Word>base</Word>
+			<Word>null</Word>
+			<Word>out</Word>
+			<Word>in</Word>
+			<Word>ref</Word>
+			<Word>unchecked</Word>
+			<Word>checked</Word>
+			<Word>Console</Word>
+			<Word>Write</Word>
+			<Word>WriteLine</Word>
+			<Word>ReadLine</Word>
+			<Word>Read</Word>
+			<Word>Print</Word>
+			<Word>Debug</Word>
+			<Word>Assert</Word>
+			<Word>ToString</Word>
+			<Word>Parse</Word>
+			<Word>TryParse</Word>
+			<Word>Task</Word>
+			<Word>async</Word>
+			<Word>await</Word>
+			<Word>static</Word>
+			<Word>partial</Word>
+			<Word>override</Word>
+			<Word>abstract</Word>
+			<Word>class</Word>
+			<Word>interface</Word>
+			<Word>struct</Word>
+			<Word>enum</Word>
+			<Word>namespace</Word>
+			<Word>using</Word>
+			<Word>{</Word>
+			<Word>}</Word>
+			<!-- Swift Keywords -->
+			<Word>let</Word>
+			<Word>var</Word>
+			<Word>func</Word>
+			<Word>class</Word>
+			<Word>struct</Word>
+			<Word>enum</Word>
+			<Word>protocol</Word>
+			<Word>extension</Word>
+			<Word>if</Word>
+			<Word>else</Word>
+			<Word>switch</Word>
+			<Word>case</Word>
+			<Word>for</Word>
+			<Word>in</Word>
+			<Word>while</Word>
+			<Word>return</Word>
+			<Word>break</Word>
+			<Word>continue</Word>
+			<Word>default</Word>
+			<Word>import</Word>
+			<Word>as</Word>
+			<Word>is</Word>
+			<Word>try</Word>
+			<Word>catch</Word>
+			<Word>throw</Word>
+			<Word>throws</Word>
+			<Word>guard</Word>
+			<Word>defer</Word>
+			<Word>init</Word>
+			<Word>deinit</Word>
+			<Word>typealias</Word>
+			<Word>associatedtype</Word>
+			<Word>self</Word>
+			<Word>super</Word>
+			<Word>nil</Word>
+			<Word>true</Word>
+			<Word>false</Word>
+			<Word>async</Word>
+			<Word>await</Word>
+			<!-- Swift Built-in Functions -->
+			<Word>print</Word>
+			<Word>println</Word>
+			<Word>append</Word>
+			<Word>map</Word>
+			<Word>filter</Word>
+			<Word>reduce</Word>
+			<Word>sorted</Word>
+			<Word>compactMap</Word>
+			<Word>flatMap</Word>
+			<Word>join</Word>
+			<Word>split</Word>
+			<Word>first</Word>
+			<Word>last</Word>
+			<Word>count</Word>
+			<Word>contains</Word>
+			<Word>index</Word>
+			<Word>subscript</Word>
+			<Word>hashValue</Word>
+			<Word>description</Word>
+			<Word>hash</Word>
+			<Word>withUnsafePointer</Word>
+			<Word>withUnsafeMutablePointer</Word>
+			<Word>withUnsafeBytes</Word>
+			<Word>withUnsafeMutableBytes</Word>
+			<Word>unowned</Word>
+			<Word>weak</Word>
+		</Keywords>
+
+		<!-- Types -->
+		<Keywords color="Type">
+			<Word>string</Word>
+			<Word>bool</Word>
+			<Word>decimal</Word>
+			<Word>object</Word>
+			<Word>int</Word>
+			<Word>float</Word>
+			<Word>double</Word>
+			<Word>char</Word>
+			<Word>void</Word>
+			<Word>long</Word>
+			<Word>short</Word>
+			<Word>unsigned</Word>
+			<Word>size_t</Word>
+			<Word>wchar_t</Word>
+			<Word>byte</Word>
+			<Word>sbyte</Word>
+			<Word>uint</Word>
+			<Word>ulong</Word>
+			<Word>ushort</Word>
+			<Word>int8_t</Word>
+			<Word>int16_t</Word>
+			<Word>int32_t</Word>
+			<Word>int64_t</Word>
+			<Word>uint8_t</Word>
+			<Word>uint16_t</Word>
+			<Word>uint32_t</Word>
+			<Word>uint64_t</Word>
+			<Word>ptrdiff_t</Word>
+			<Word>intptr_t</Word>
+			<Word>uintptr_t</Word>
+			<Word>float32</Word>
+			<Word>float64</Word>
+			<!-- Swift Types -->
+			<Word>Int</Word>
+			<Word>Double</Word>
+			<Word>Float</Word>
+			<Word>Bool</Word>
+			<Word>String</Word>
+			<Word>Character</Word>
+			<Word>Array</Word>
+			<Word>Dictionary</Word>
+			<Word>Set</Word>
+			<Word>Optional</Word>
+			<Word>Any</Word>
+			<Word>AnyObject</Word>
+		</Keywords>
+
+		<!-- Operators -->
+		<Keywords color="Operator">
+			<Word>==</Word>
+			<Word>!=</Word>
+			<Word>===</Word>
+			<Word>!==</Word>
+			<Word>&lt;</Word>
+			<Word>&gt;</Word>
+			<Word>&lt;=</Word>
+			<Word>&gt;=</Word>
+			<Word>+</Word>
+			<Word>-</Word>
+			<Word>*</Word>
+			<Word>/</Word>
+			<Word>%</Word>
+			<Word>&amp;</Word>
+			<Word>|</Word>
+			<Word>^</Word>
+			<Word>~</Word>
+			<Word>!</Word>
+			<Word>?</Word>
+			<Word>:</Word>
+			<Word>&amp;&amp;</Word>
+			<Word>||</Word>
+			<Word>+=</Word>
+			<Word>-=</Word>
+			<Word>*=</Word>
+			<Word>/=</Word>
+			<Word>%=</Word>
+			<Word>&amp;=</Word>
+			<Word>|=</Word>
+			<Word>^=</Word>
+			<Word>**</Word>
+			<Word>**=</Word>
+		</Keywords>
+
+	</RuleSet>
+</SyntaxDefinition>
