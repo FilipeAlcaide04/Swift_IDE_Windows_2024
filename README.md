@@ -25,4 +25,5 @@ Custom maximize, minimize, and drag functions for a smoother interface experienc
 
 Start coding, compiling, and running your Swift or C/C++ files!
 
-# Swift for Windows is designed to streamline your workflow and bring efficient Swift and C/C++ development to the Windows platform. Enjoy coding! 🎉
+Swift for Windows is designed to streamline your workflow and bring efficient Swift and C/C++ development to the Windows platform. Enjoy coding! 🎉
+Thank you for your time :) 
