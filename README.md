@@ -1,8 +1,28 @@
-# Swift_for_Windows
-Swift for Windows is a lightweight code editor and execution environment for Swift, C, and C++ development on Windows. It provides a range of features, including:
+# Swift for Windows 🚀
+Swift for Windows is a simple yet powerful code editor and execution environment tailored for Swift, C, and C++ development on Windows.
 
-Code Editing: Syntax highlighting, line numbering, and adjustable font sizes.
-File Management: Open, save, create, and close tabs for multiple files, with support for C, C++, and Swift.
-Compilation and Execution: Integrated with gcc, g++, and swiftc for compiling and running code directly from the editor.
-Custom Window Controls: Easily maximize, minimize, and drag the window.
-Swift for Windows is designed to simplify coding, compiling, and running programs on a Windows platform.
+Features ✨
+
+#Code Editing ✍️
+Syntax highlighting for Swift, C, and C++
+Line numbering and adjustable font sizes for easier reading
+
+# File Management 📂
+Open, save, create, and close tabs for multiple files in one session
+Supports a range of file types, including .c, .cpp, and .swift
+
+#Compilation and Execution ⚙️
+Integrated with gcc, g++, and swiftc for seamless compiling and running
+Execute compiled files directly from the editor with one click
+
+#Custom Window Controls 🖥️
+Custom maximize, minimize, and drag functions for a smoother interface experience
+
+# Getting Started 🚀
+1º-Clone the repository: git clone https://github.com/yourusername/Swift_for_Windows.git
+
+2º-Open the solution in Visual Studio or your preferred IDE.
+
+Start coding, compiling, and running your Swift or C/C++ files!
+
+# Swift for Windows is designed to streamline your workflow and bring efficient Swift and C/C++ development to the Windows platform. Enjoy coding! 🎉
