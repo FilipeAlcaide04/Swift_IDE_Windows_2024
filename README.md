@@ -19,7 +19,7 @@ Execute compiled files directly from the editor with one click
 Custom maximize, minimize, and drag functions for a smoother interface experience
 
 # Getting Started 🚀
-1º-Clone the repository: git clone https://github.com/FilipeAlcaide99/Swift_for_Windows_IDE.git
+1º-Clone the repository: git clone https://github.com/FilipeAlcaide04/Swift_for_Windows_IDE.git
 
 2º-Open the solution in Visual Studio or your preferred IDE.
 
