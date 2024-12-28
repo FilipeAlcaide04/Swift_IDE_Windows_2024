@@ -126,7 +126,7 @@
         <Style TargetType="Button" x:Key="transparentBtn">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontFamily" Value="JUbuntu sans mono"/>
+            <Setter Property="FontFamily" Value="JetBrains Mono Nl"/>
             <Setter Property="FontWeight" Value="Medium"/>
             <Setter Property="Width" Value="20"/>
             <Setter Property="Height" Value="20"/>
@@ -155,7 +155,7 @@
         <Style TargetType="RepeatButton" x:Key="rtransparentBtn">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontFamily" Value="Ubuntu sans mono"/>
+            <Setter Property="FontFamily" Value="JetBrains Mono Nl"/>
             <Setter Property="FontWeight" Value="Medium"/>
             <Setter Property="Width" Value="20"/>
             <Setter Property="Height" Value="20"/>
@@ -186,7 +186,7 @@
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="17"/>
             <Setter Property="Height" Value="25"/>
-            <Setter Property="FontFamily" Value="Ubuntu sans mono"/>
+            <Setter Property="FontFamily" Value="JetBrains Mono Nl"/>
             <Setter Property="Margin" Value="3,3,0,0"/>
             <Setter Property="BorderThickness" Value="0"/> <!--mexi aqui era 1-->
             <Setter Property="Template">
@@ -296,7 +296,7 @@
                             <TextBlock Text="Save: CTRL S" />
                             <TextBlock Text="Zoom in: CTRL +" />
                             <TextBlock Text="Zoom out: CTRL -" />
-                            <TextBlock Text="Save and Run: CTRL Q" />
+                            <TextBlock Text="Save and Run: CTRL F4" />
                         </StackPanel>
                     </ToolTip>
                 </Button.ToolTip>
@@ -305,7 +305,7 @@
             <TextBlock Text="20" x:Name="tamanhot" Foreground="White" Grid.Column="1" VerticalAlignment="center" HorizontalAlignment="Right"
             TextAlignment="Center" 
             Margin="0,0,220,0"       
-            FontFamily="Ubuntu sans mono" FontSize="20"
+            FontFamily="JetBrains Mono Nl" FontSize="20"
             ToolTip="Fontsize"/>
 
             <Button x:Name="CREATEFILE" Click="CreateNewFile_Click" Style="{StaticResource transparentBtn}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,190,0">
@@ -380,14 +380,14 @@
  
         <Grid Grid.Row="1">
 
-            <TextBlock VerticalAlignment="Center" FontSize="20px" HorizontalAlignment="Center" FontFamily="Ubuntu sans mono" Opacity="0.3" Foreground="White"> 
+            <TextBlock VerticalAlignment="Center" FontSize="20px" HorizontalAlignment="Center" FontFamily="JetBrains Mono Nl" Opacity="0.3" Foreground="White"> 
                 Let's start coding
             </TextBlock>
 
             <TabControl Name="tabControl" Grid.Row="1" Visibility="Collapsed"
                  Background="#252526" 
                  BorderBrush="Transparent"
-                FontFamily="Ubuntu sans mono" 
+                FontFamily="JetBrains Mono Nl" 
                         >
                 <TabControl.Resources>
                     <Style TargetType="TabItem" BasedOn="{StaticResource TabItemWithCloseButton}"/>

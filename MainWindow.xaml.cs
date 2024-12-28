@@ -47,7 +47,7 @@ namespace Swift_for_Windows
                     SaveFile_Click();  // Call your save function
                     e.Handled = true;  // Mark the event as handled
                 }
-                else if (e.Key == Key.Q)
+                else if (e.Key == Key.F4)
                 {
                     SaveFile_Click();
 
@@ -187,7 +187,7 @@ namespace Swift_for_Windows
                 {
                     if (int.TryParse(tamanhot.Text, out int x) && x < 50)
                     {
-                        x += 1;
+                        x = x + 1;
                         tamanhot.Text = x.ToString();
                         textEditor.FontSize += 1;
                     }
@@ -347,7 +347,7 @@ namespace Swift_for_Windows
                 {
                     if (int.TryParse(tamanhot.Text, out int x) && x > 10)
                     {
-                        x -= 1;
+                        x = x - 1;
                         tamanhot.Text = x.ToString();
                         textEditor.FontSize -= 1;
                     }
